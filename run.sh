@@ -2,6 +2,12 @@
 
 set -e
 
+if [ ! -z "$MARKER_PATH" ]
+then
+    echo "Creating marker file $MARKER_PATH ..."
+    touch $MARKER_PATH
+fi
+
 syncthingHome=$(mktemp -d)
 echo "Copying configuration files to $syncthingHome ..."
 
