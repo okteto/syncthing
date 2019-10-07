@@ -1,4 +1,4 @@
-FROM syncthing/syncthing:1.2.2
+FROM syncthing/syncthing:1.3.0
 
 COPY run.sh .
 
